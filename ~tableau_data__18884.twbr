@@ -590,6 +590,147 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
+    <datasource caption='tableau_formatted_prediction' inline='true' name='federated.1opg60i10z5vch100p36a1dsrccr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_formatted_prediction' name='textscan.1qg6ecm046utyc19rd9790buto53'>
+            <connection class='textscan' directory='C:/Users/e_mcs/OneDrive/Desktop/Data Class/Final Project/titanic-ml-project' filename='tableau_formatted_prediction.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qg6ecm046utyc19rd9790buto53' name='tableau_formatted_prediction.csv' table='[tableau_formatted_prediction#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='PassengerId' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Prediction' ordinal='2' />
+            <column datatype='string' name='Actual' ordinal='3' />
+            <column datatype='string' name='Accuracy' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1qg6ecm046utyc19rd9790buto53' name='tableau_formatted_prediction.csv' table='[tableau_formatted_prediction#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='PassengerId' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Prediction' ordinal='2' />
+            <column datatype='string' name='Actual' ordinal='3' />
+            <column datatype='string' name='Accuracy' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_formatted_prediction.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PassengerId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PassengerId]</local-name>
+            <parent-name>[tableau_formatted_prediction.csv]</parent-name>
+            <remote-alias>PassengerId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_formatted_prediction.csv_2DEC35D6AB08469398EB8C1485F29FEC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[tableau_formatted_prediction.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_formatted_prediction.csv_2DEC35D6AB08469398EB8C1485F29FEC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prediction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Prediction]</local-name>
+            <parent-name>[tableau_formatted_prediction.csv]</parent-name>
+            <remote-alias>Prediction</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_formatted_prediction.csv_2DEC35D6AB08469398EB8C1485F29FEC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Actual]</local-name>
+            <parent-name>[tableau_formatted_prediction.csv]</parent-name>
+            <remote-alias>Actual</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_formatted_prediction.csv_2DEC35D6AB08469398EB8C1485F29FEC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accuracy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Accuracy]</local-name>
+            <parent-name>[tableau_formatted_prediction.csv]</parent-name>
+            <remote-alias>Accuracy</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_formatted_prediction.csv_2DEC35D6AB08469398EB8C1485F29FEC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Passenger Id' datatype='integer' name='[PassengerId]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='tableau_formatted_prediction.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_formatted_prediction.csv_2DEC35D6AB08469398EB8C1485F29FEC]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='tableau_formatted_prediction.csv' id='tableau_formatted_prediction.csv_2DEC35D6AB08469398EB8C1485F29FEC'>
+            <properties context=''>
+              <relation connection='textscan.1qg6ecm046utyc19rd9790buto53' name='tableau_formatted_prediction.csv' table='[tableau_formatted_prediction#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='PassengerId' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='Prediction' ordinal='2' />
+                  <column datatype='string' name='Actual' ordinal='3' />
+                  <column datatype='string' name='Accuracy' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
   </datasources>
   <mapsources>
     <mapsource name='Tableau' />
@@ -801,22 +942,28 @@
     <worksheet name='Sheet 7'>
       <table>
         <view>
-          <datasources />
+          <datasources>
+            <datasource caption='predict_df' name='federated.1szccnv1tmdro21dlxbta1h4kss6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1szccnv1tmdro21dlxbta1h4kss6'>
+            <column datatype='integer' name='[Actual]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Prediction]' role='measure' type='quantitative' />
+            <column-instance column='[Actual]' derivation='Count' name='[cnt:Actual:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Prediction]' derivation='Count' name='[cnt:Prediction:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
           <aggregation value='true' />
         </view>
         <style />
         <panes>
-          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
             <mark class='Pie' />
-            <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
-                <format attr='mark-labels-cull' value='true' />
-              </style-rule>
-            </style>
+            <encodings>
+              <wedge-size column='[federated.1szccnv1tmdro21dlxbta1h4kss6].[cnt:Actual:qk]' />
+              <size column='[federated.1szccnv1tmdro21dlxbta1h4kss6].[cnt:Prediction:qk]' />
+            </encodings>
           </pane>
         </panes>
         <rows />
@@ -1073,8 +1220,8 @@
       <simple-id uuid='{1601021A-E5AB-43F2-8D2C-F6ADDC03E044}' />
     </dashboard>
   </dashboards>
-  <windows source-height='72'>
-    <window class='worksheet' maximized='true' name='Survival Sex &amp; Age'>
+  <windows source-height='93'>
+    <window class='worksheet' name='Survival Sex &amp; Age'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1241,7 +1388,7 @@
       <active id='-1' />
       <simple-id uuid='{BFCAC90F-6690-433A-AB9F-28F32D7EC089}' />
     </window>
-    <window class='worksheet' name='Sheet 7'>
+    <window class='worksheet' maximized='true' name='Sheet 7'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1259,6 +1406,11 @@
           </strip>
           <strip size='31'>
             <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1szccnv1tmdro21dlxbta1h4kss6].[cnt:Prediction:qk]' type='size' />
           </strip>
         </edge>
       </cards>
